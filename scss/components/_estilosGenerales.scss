@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f1ba873a;
+    width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: nth($colores , 1 );
+}
+
+img{
+    width: 100%;
+}
