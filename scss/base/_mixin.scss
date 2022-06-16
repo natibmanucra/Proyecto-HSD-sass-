@@ -1,0 +1,11 @@
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@mixin grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}

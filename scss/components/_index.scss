@@ -6,10 +6,10 @@ header{
     padding: 1.2rem;
 
     h1{
-        color: nth($colores , 1 );
+        font-family: map-get($h1, fuente);
+        color: map-get($h1, letraColor);
+        font-weight: map-get($h1, grosor);
         font-size: 2.5rem;
-        font-weight: bold;
-        font-family: 'Source Serif Pro', serif;
         @media screen and (max-width: 768px){
             font-size: 1.8rem;
         }
@@ -21,17 +21,14 @@ header{
 
 #menu{
     ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        @include flex;
         padding: 1rem;
         a{
             display: block;
-            color: nth($colores , 1 );
+            @extend %tipo-basica;
             font-weight: 400;
             font-size: 1rem;
             padding: 0.5rem;
-            font-family: $font-sinserif;
             text-transform: uppercase;
             letter-spacing: 1px;
             @media screen and (max-width: 480px){
@@ -123,31 +120,28 @@ header{
 
 .card-mod{
     border: 1px solid nth($colores , 4 );
+    margin: 0.5rem;
 }
 
 .tipo-modificada{
-    font-family: 'Manrope', sans-serif;
-    color: nth($colores , 1 );
+    @extend %tipo-basica;
 }
 
 .btn-mod{
-    font-family: 'Manrope', sans-serif;
-    color: nth($colores , 1 );
+    @extend %tipo-basica;
     background-color: nth($colores , 2 );
     border-color: nth($colores , 2 );
 }
    
 .sectionIndex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flex;
     padding-bottom: 1.5rem;
+    overflow: hidden;
 }
 
 .txtPrincipal{
-    font-family: $font-sinserif;
+    @extend %tipo-basica;
     font-size: 1rem;
-    color: nth($colores , 1 );
     text-align: center;
     padding: 1.5rem;
     margin: 0 auto;
@@ -156,16 +150,13 @@ header{
 footer{
     background: rgb(202,218,101);
     background: linear-gradient(90deg, rgba(202,218,101,0.8046568969384629) 0%, rgba(171,225,136,0.846673703661152) 50%, rgba(202,218,101,0.7990546560421043) 100%);
-    display: flex;
+    @include flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .letraYColor{
-    color: nth($colores , 1 );
-    font-family: $font-sinserif;
+    @extend %tipo-basica;
     font-size: 1.3rem;
     padding: 0.5rem;
     @media screen and (max-width: 768px){
@@ -177,8 +168,7 @@ footer{
 }
 
 .casilla{
-    color: nth($colores , 1 );
-    font-family: $font-sinserif;
+    @extend %tipo-basica;
     font-size: 1rem;
     padding: 0.5rem;
     @media screen and (max-width: 768px){

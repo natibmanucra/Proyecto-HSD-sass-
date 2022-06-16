@@ -1,3 +1,8 @@
+.subt, .mainSec, .casilla, .letraYColor, .txtPrincipal, .btn-mod, .tipo-modificada, #menu ul a {
+  font-family: "Manrope", sans-serif;
+  color: #5D675B;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -30,10 +35,10 @@ header {
   padding: 1.2rem;
 }
 header h1 {
-  color: #5D675B;
-  font-size: 2.5rem;
-  font-weight: bold;
   font-family: "Source Serif Pro", serif;
+  color: #5D675B;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 @media screen and (max-width: 768px) {
   header h1 {
@@ -54,11 +59,9 @@ header h1 {
 }
 #menu ul a {
   display: block;
-  color: #5D675B;
   font-weight: 400;
   font-size: 1rem;
   padding: 0.5rem;
-  font-family: "Manrope", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -148,16 +151,10 @@ header h1 {
 
 .card-mod {
   border: 1px solid #F78E69;
-}
-
-.tipo-modificada {
-  font-family: "Manrope", sans-serif;
-  color: #5D675B;
+  margin: 0.5rem;
 }
 
 .btn-mod {
-  font-family: "Manrope", sans-serif;
-  color: #5D675B;
   background-color: #F1BB87;
   border-color: #F1BB87;
 }
@@ -165,14 +162,13 @@ header h1 {
 .sectionIndex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .txtPrincipal {
-  font-family: "Manrope", sans-serif;
   font-size: 1rem;
-  color: #5D675B;
   text-align: center;
   padding: 1.5rem;
   margin: 0 auto;
@@ -182,15 +178,13 @@ footer {
   background: rgb(202, 218, 101);
   background: linear-gradient(90deg, rgba(202, 218, 101, 0.8046568969) 0%, rgba(171, 225, 136, 0.8466737037) 50%, rgba(202, 218, 101, 0.799054656) 100%);
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
 .letraYColor {
-  color: #5D675B;
-  font-family: "Manrope", sans-serif;
   font-size: 1.3rem;
   padding: 0.5rem;
 }
@@ -206,8 +200,6 @@ footer {
 }
 
 .casilla {
-  color: #5D675B;
-  font-family: "Manrope", sans-serif;
   font-size: 1rem;
   padding: 0.5rem;
 }
@@ -263,6 +255,161 @@ footer {
   .botonUp {
     font-size: 30px;
   }
+}
+
+.mainSec {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .mainSec h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainSec h3 {
+    font-size: 1.3rem;
+  }
+}
+
+.tamanoLetra {
+  font-size: 1rem;
+}
+
+.galerias {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .galerias {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .galerias {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+
+.containerSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+
+.galeriaDeco {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 0.5fr 1fr);
+  grid-template-areas: "candles candles candles candles" "img1 img2 img3 img4" "mirrors mirrors mirrors mirrors" "img5 img6 img7 img8" "centerpieces centerpieces centerpieces centerpieces" "img9 img10 img11 img12" "indoorPlants indoorPlants indoorPlants indoorPlants" "img13 img14 img15 img16";
+}
+@media screen and (max-width: 768px) {
+  .galeriaDeco .galeriaDeco {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr;
+    overflow: hidden;
+    grid-template-areas: "candles candles" "img1 img2" "img3 img4" "mirrors mirrors" "img5 img6" "img7 img8" "centerpieces centerpieces" "img9 img10" "img11 img12" "indoorPlants indoorPlants" "img13 img14" "img15 img16";
+  }
+}
+
+.subt {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.candles {
+  grid-area: candles;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.mirrors {
+  grid-area: mirrors;
+}
+
+.img5 {
+  grid-area: img5;
+}
+
+.img6 {
+  grid-area: img6;
+}
+
+.img7 {
+  grid-area: img7;
+}
+
+.img8 {
+  grid-area: img8;
+}
+
+.centerpieces {
+  grid-area: centerpieces;
+}
+
+.img9 {
+  grid-area: img9;
+}
+
+.img10 {
+  grid-area: img10;
+}
+
+.img11 {
+  grid-area: img11;
+}
+
+.img12 {
+  grid-area: img12;
+}
+
+.indoorPlants {
+  grid-area: indoorPlants;
+}
+
+.img13 {
+  grid-area: img13;
+}
+
+.img14 {
+  grid-area: img14;
+}
+
+.img15 {
+  grid-area: img15;
+}
+
+.img16 {
+  grid-area: img16;
 }
 
 /*# sourceMappingURL=style.css.map */
