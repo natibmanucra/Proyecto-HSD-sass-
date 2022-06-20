@@ -316,7 +316,7 @@ footer {
   grid-template-areas: "candles candles candles candles" "img1 img2 img3 img4" "mirrors mirrors mirrors mirrors" "img5 img6 img7 img8" "centerpieces centerpieces centerpieces centerpieces" "img9 img10 img11 img12" "indoorPlants indoorPlants indoorPlants indoorPlants" "img13 img14 img15 img16";
 }
 @media screen and (max-width: 768px) {
-  .galeriaDeco .galeriaDeco {
+  .galeriaDeco {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr;
     overflow: hidden;

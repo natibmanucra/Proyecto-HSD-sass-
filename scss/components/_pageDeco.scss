@@ -12,24 +12,22 @@
     "indoorPlants indoorPlants indoorPlants indoorPlants"
     "img13 img14 img15 img16";
     @media screen and (max-width: 768px){
-        .galeriaDeco{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr;
-            overflow: hidden;
-            grid-template-areas: 
-            "candles candles"
-            "img1 img2"
-            "img3 img4"
-            "mirrors mirrors"
-            "img5 img6"
-            "img7 img8"
-            "centerpieces centerpieces"
-            "img9 img10"
-            "img11 img12"
-            "indoorPlants indoorPlants"
-            "img13 img14"
-            "img15 img16";
-        } 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr;
+        overflow: hidden;
+        grid-template-areas: 
+        "candles candles"
+        "img1 img2"
+        "img3 img4"
+        "mirrors mirrors"
+        "img5 img6"
+        "img7 img8"
+        "centerpieces centerpieces"
+        "img9 img10"
+        "img11 img12"
+        "indoorPlants indoorPlants"
+        "img13 img14"
+        "img15 img16";
     }
 }
 
