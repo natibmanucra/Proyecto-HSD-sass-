@@ -131,6 +131,11 @@ header{
     @extend %tipo-basica;
     background-color: nth($colores , 2 );
     border-color: nth($colores , 2 );
+    &:hover{
+        background-color: nth($colores , 1 );
+        color: white;
+        border-color: nth($colores , 1 );
+    }
 }
    
 .sectionIndex{
@@ -198,9 +203,9 @@ footer{
 }
 
 .botonSend{
+    @extend %tipo-basica;
     &:hover{
-        transform: scale(1.5) translateX(10px);
-        transition: all 1.5s ease-out;
+        background-color: nth($colores , 1 );
     }
 }
 
